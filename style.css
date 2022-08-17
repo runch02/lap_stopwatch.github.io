@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+button, a, input, textarea, * {
+    outline: none;
+}
+
+#theme {
+    color: gray;
+    background: #121212;
+    border: hidden;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    text-align: center;
+    width: 270px;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-watch, .lap-watch {
+    font-size: 2rem;
+    font-family: sans-serif !important;
+    width: 100%;
+}
+
+.main-watch span, .lap-watch span{
+    font-size: 1rem;
+}
+
+.main-watch, .lap-watch, .button-section {
+    margin: 1rem;
+}
+
+footer a, .button-section button {
+    color: black;
+    font-weight: 700;
+    background: linear-gradient(darkslategray, darkcyan);
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    padding: 0.25rem;
+    border-radius: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: hidden;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+footer a {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.timeStampTitle {
+    padding: 0.15rem;
+    margin: 0.15rem;
+    border: 0.1pc ridge black;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.lapData {
+    font-size: small;
+}
+
+#lapData {
+    display: block;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+table {
+    /* flex: 1; */
+    border-collapse: collapse;
+    border: hidden;
+    /* border-radius: 0.2rem; */
+    /* border: 0.1pc ridge black; */
+}
+
+table tr td{
+    padding: 0.25rem;
+    border-radius: 0.2rem;
+    margin-right: 0.25rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 0.1pc ridge rgba(0, 0, 0, 0.477);
+}
+
+/* @media only screen and (max-width: 500px) {
+    footer a {
+        top: 0;
+        bottom: 28.5rem;
+        right: 1rem;
+    }    
+} */
